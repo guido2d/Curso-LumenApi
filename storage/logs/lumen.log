@@ -708,3 +708,309 @@ Stack trace:
 #25 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Console/Kernel.php(78): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #26 /home/vagrant/lumenapi/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #27 {main}  
+[2016-10-24 14:42:00] lumen.ERROR: ErrorException: Undefined variable: request in /home/vagrant/lumenapi/app/Http/Controllers/ProfesorController.php:59
+Stack trace:
+#0 /home/vagrant/lumenapi/app/Http/Controllers/ProfesorController.php(59): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined varia...', '/home/vagrant/l...', 59, Array)
+#1 /home/vagrant/lumenapi/app/Http/Controllers/ProfesorController.php(25): App\Http\Controllers\ProfesorController->validacion()
+#2 [internal function]: App\Http\Controllers\ProfesorController->store(Object(Illuminate\Http\Request))
+#3 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#4 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1411): Illuminate\Container\Container->call(Array, Array)
+#5 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1375): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1347): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\ProfesorController), 'store', Array)
+#7 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1315): Laravel\Lumen\Application->callControllerAction(Array)
+#8 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1300): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#9 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1215): Laravel\Lumen\Application->handleFoundRoute(Array)
+#10 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1454): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#11 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1221): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#12 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1161): Laravel\Lumen\Application->dispatch(NULL)
+#13 /home/vagrant/lumenapi/public/index.php(28): Laravel\Lumen\Application->run()
+#14 {main}  
+[2016-10-24 14:42:17] lumen.ERROR: ErrorException: Undefined variable: request in /home/vagrant/lumenapi/app/Http/Controllers/ProfesorController.php:59
+Stack trace:
+#0 /home/vagrant/lumenapi/app/Http/Controllers/ProfesorController.php(59): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined varia...', '/home/vagrant/l...', 59, Array)
+#1 /home/vagrant/lumenapi/app/Http/Controllers/ProfesorController.php(25): App\Http\Controllers\ProfesorController->validacion()
+#2 [internal function]: App\Http\Controllers\ProfesorController->store(Object(Illuminate\Http\Request))
+#3 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#4 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1411): Illuminate\Container\Container->call(Array, Array)
+#5 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1375): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1347): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\ProfesorController), 'store', Array)
+#7 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1315): Laravel\Lumen\Application->callControllerAction(Array)
+#8 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1300): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#9 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1215): Laravel\Lumen\Application->handleFoundRoute(Array)
+#10 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1454): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#11 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1221): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#12 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1161): Laravel\Lumen\Application->dispatch(NULL)
+#13 /home/vagrant/lumenapi/public/index.php(28): Laravel\Lumen\Application->run()
+#14 {main}  
+[2016-10-24 14:49:49] lumen.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Call to undefined method App\Http\Controllers\ProfesorController::crearRespuest() in /home/vagrant/lumenapi/app/Http/Controllers/ProfesorController.php:54
+Stack trace:
+#0 [internal function]: App\Http\Controllers\ProfesorController->update(Object(Illuminate\Http\Request), '1')
+#1 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#2 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1411): Illuminate\Container\Container->call(Array, Array)
+#3 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1375): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#4 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1347): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\ProfesorController), 'update', Array)
+#5 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1315): Laravel\Lumen\Application->callControllerAction(Array)
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1300): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#7 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1270): Laravel\Lumen\Application->handleFoundRoute(Array)
+#8 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1219): Laravel\Lumen\Application->handleDispatcherResponse(Array)
+#9 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1454): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#10 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1221): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#11 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1161): Laravel\Lumen\Application->dispatch(NULL)
+#12 /home/vagrant/lumenapi/public/index.php(28): Laravel\Lumen\Application->run()
+#13 {main}  
+[2016-10-24 15:14:16] lumen.ERROR: InvalidArgumentException: Command "seed" is not defined.
+
+Did you mean one of these?
+    db:seed
+    make:seeder in /home/vagrant/lumenapi/vendor/symfony/console/Application.php:519
+Stack trace:
+#0 /home/vagrant/lumenapi/vendor/symfony/console/Application.php(187): Symfony\Component\Console\Application->find('seed')
+#1 /home/vagrant/lumenapi/vendor/symfony/console/Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Console/Kernel.php(78): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /home/vagrant/lumenapi/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2016-10-24 16:06:27] lumen.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/vagrant/lumenapi/app/Http/Controllers/CursoEstudianteController.php:2
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#1 {main}  
+[2016-10-24 17:01:36] lumen.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Parse error: syntax error, unexpected 'if' (T_IF) in /home/vagrant/lumenapi/app/Http/Controllers/ProfesorCursoController.php:27
+Stack trace:
+#0 /home/vagrant/lumenapi/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/l...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#2 [internal function]: spl_autoload_call('App\\Http\\Contro...')
+#3 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(741): ReflectionClass->__construct('App\\Http\\Contro...')
+#4 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Contro...', Array)
+#5 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(447): Illuminate\Container\Container->make('App\\Http\\Contro...', Array)
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1342): Laravel\Lumen\Application->make('App\\Http\\Contro...')
+#7 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1315): Laravel\Lumen\Application->callControllerAction(Array)
+#8 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1300): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#9 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1270): Laravel\Lumen\Application->handleFoundRoute(Array)
+#10 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1219): Laravel\Lumen\Application->handleDispatcherResponse(Array)
+#11 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1454): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1221): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#13 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1161): Laravel\Lumen\Application->dispatch(NULL)
+#14 /home/vagrant/lumenapi/public/index.php(28): Laravel\Lumen\Application->run()
+#15 {main}  
+[2016-10-24 17:03:26] lumen.ERROR: PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`homestead`.`cursos`, CONSTRAINT `cursos_profesor_id_foreign` FOREIGN KEY (`profesor_id`) REFERENCES `profesores` (`id`)) in /home/vagrant/lumenapi/vendor/illuminate/database/Connection.php:390
+Stack trace:
+#0 /home/vagrant/lumenapi/vendor/illuminate/database/Connection.php(390): PDOStatement->execute(Array)
+#1 /home/vagrant/lumenapi/vendor/illuminate/database/Connection.php(655): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `cu...', Array)
+#2 /home/vagrant/lumenapi/vendor/illuminate/database/Connection.php(618): Illuminate\Database\Connection->runQueryCallback('insert into `cu...', Array, Object(Closure))
+#3 /home/vagrant/lumenapi/vendor/illuminate/database/Connection.php(391): Illuminate\Database\Connection->run('insert into `cu...', Array, Object(Closure))
+#4 /home/vagrant/lumenapi/vendor/illuminate/database/Connection.php(347): Illuminate\Database\Connection->statement('insert into `cu...', Array)
+#5 /home/vagrant/lumenapi/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `cu...', Array)
+#6 /home/vagrant/lumenapi/vendor/illuminate/database/Query/Builder.php(1821): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `cu...', Array, 'id')
+#7 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#8 /home/vagrant/lumenapi/vendor/illuminate/database/Eloquent/Builder.php(1015): call_user_func_array(Array, Array)
+#9 /home/vagrant/lumenapi/vendor/illuminate/database/Eloquent/Model.php(1592): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#10 /home/vagrant/lumenapi/vendor/illuminate/database/Eloquent/Model.php(1561): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#11 /home/vagrant/lumenapi/vendor/illuminate/database/Eloquent/Model.php(1452): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder), Array)
+#12 /home/vagrant/lumenapi/vendor/illuminate/database/Eloquent/Model.php(546): Illuminate\Database\Eloquent\Model->save()
+#13 /home/vagrant/lumenapi/app/Http/Controllers/ProfesorCursoController.php(34): Illuminate\Database\Eloquent\Model::create(Array)
+#14 [internal function]: App\Http\Controllers\ProfesorCursoController->store(Object(Illuminate\Http\Request), '4')
+#15 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#16 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1411): Illuminate\Container\Container->call(Array, Array)
+#17 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1375): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#18 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1347): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\ProfesorCursoController), 'store', Array)
+#19 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1315): Laravel\Lumen\Application->callControllerAction(Array)
+#20 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1300): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#21 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1270): Laravel\Lumen\Application->handleFoundRoute(Array)
+#22 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1219): Laravel\Lumen\Application->handleDispatcherResponse(Array)
+#23 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1454): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#24 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1221): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#25 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1161): Laravel\Lumen\Application->dispatch(NULL)
+#26 /home/vagrant/lumenapi/public/index.php(28): Laravel\Lumen\Application->run()
+#27 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`homestead`.`cursos`, CONSTRAINT `cursos_profesor_id_foreign` FOREIGN KEY (`profesor_id`) REFERENCES `profesores` (`id`)) (SQL: insert into `cursos` (`titulo`, `descripcion`, `valor`, `updated_at`, `created_at`) values (prueba, descripcion, 500, 2016-10-24 17:03:26, 2016-10-24 17:03:26)) in /home/vagrant/lumenapi/vendor/illuminate/database/Connection.php:662
+Stack trace:
+#0 /home/vagrant/lumenapi/vendor/illuminate/database/Connection.php(618): Illuminate\Database\Connection->runQueryCallback('insert into `cu...', Array, Object(Closure))
+#1 /home/vagrant/lumenapi/vendor/illuminate/database/Connection.php(391): Illuminate\Database\Connection->run('insert into `cu...', Array, Object(Closure))
+#2 /home/vagrant/lumenapi/vendor/illuminate/database/Connection.php(347): Illuminate\Database\Connection->statement('insert into `cu...', Array)
+#3 /home/vagrant/lumenapi/vendor/illuminate/database/Query/Processors/Processor.php(32): Illuminate\Database\Connection->insert('insert into `cu...', Array)
+#4 /home/vagrant/lumenapi/vendor/illuminate/database/Query/Builder.php(1821): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `cu...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /home/vagrant/lumenapi/vendor/illuminate/database/Eloquent/Builder.php(1015): call_user_func_array(Array, Array)
+#7 /home/vagrant/lumenapi/vendor/illuminate/database/Eloquent/Model.php(1592): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 /home/vagrant/lumenapi/vendor/illuminate/database/Eloquent/Model.php(1561): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#9 /home/vagrant/lumenapi/vendor/illuminate/database/Eloquent/Model.php(1452): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 /home/vagrant/lumenapi/vendor/illuminate/database/Eloquent/Model.php(546): Illuminate\Database\Eloquent\Model->save()
+#11 /home/vagrant/lumenapi/app/Http/Controllers/ProfesorCursoController.php(34): Illuminate\Database\Eloquent\Model::create(Array)
+#12 [internal function]: App\Http\Controllers\ProfesorCursoController->store(Object(Illuminate\Http\Request), '4')
+#13 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#14 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1411): Illuminate\Container\Container->call(Array, Array)
+#15 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1375): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#16 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1347): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\ProfesorCursoController), 'store', Array)
+#17 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1315): Laravel\Lumen\Application->callControllerAction(Array)
+#18 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1300): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#19 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1270): Laravel\Lumen\Application->handleFoundRoute(Array)
+#20 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1219): Laravel\Lumen\Application->handleDispatcherResponse(Array)
+#21 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1454): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#22 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1221): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#23 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1161): Laravel\Lumen\Application->dispatch(NULL)
+#24 /home/vagrant/lumenapi/public/index.php(28): Laravel\Lumen\Application->run()
+#25 {main}  
+[2016-10-24 17:06:00] lumen.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Call to undefined method App\Http\Controllers\ProfesorCursoController::crearRepuesta() in /home/vagrant/lumenapi/app/Http/Controllers/ProfesorCursoController.php:36
+Stack trace:
+#0 [internal function]: App\Http\Controllers\ProfesorCursoController->store(Object(Illuminate\Http\Request), '4')
+#1 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#2 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1411): Illuminate\Container\Container->call(Array, Array)
+#3 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1375): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#4 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1347): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\ProfesorCursoController), 'store', Array)
+#5 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1315): Laravel\Lumen\Application->callControllerAction(Array)
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1300): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#7 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1270): Laravel\Lumen\Application->handleFoundRoute(Array)
+#8 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1219): Laravel\Lumen\Application->handleDispatcherResponse(Array)
+#9 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1454): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#10 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1221): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#11 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1161): Laravel\Lumen\Application->dispatch(NULL)
+#12 /home/vagrant/lumenapi/public/index.php(28): Laravel\Lumen\Application->run()
+#13 {main}  
+[2016-10-24 17:14:31] lumen.ERROR: Symfony\Component\Debug\Exception\FatalThrowableError: Call to undefined method App\Http\Controllers\ProfesorCursoController::validaciones() in /home/vagrant/lumenapi/app/Http/Controllers/ProfesorCursoController.php:28
+Stack trace:
+#0 [internal function]: App\Http\Controllers\ProfesorCursoController->update(Object(Illuminate\Http\Request), '1', '5')
+#1 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(507): call_user_func_array(Array, Array)
+#2 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1411): Illuminate\Container\Container->call(Array, Array)
+#3 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1375): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#4 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1347): Laravel\Lumen\Application->callLumenController(Object(App\Http\Controllers\ProfesorCursoController), 'update', Array)
+#5 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1315): Laravel\Lumen\Application->callControllerAction(Array)
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1300): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#7 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1270): Laravel\Lumen\Application->handleFoundRoute(Array)
+#8 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1219): Laravel\Lumen\Application->handleDispatcherResponse(Array)
+#9 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1454): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#10 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1221): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#11 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(1161): Laravel\Lumen\Application->dispatch(NULL)
+#12 /home/vagrant/lumenapi/public/index.php(28): Laravel\Lumen\Application->run()
+#13 {main}  
+[2016-10-25 02:26:20] lumen.ERROR: ReflectionException: Class path.database does not exist in /home/vagrant/lumenapi/vendor/illuminate/container/Container.php:741
+Stack trace:
+#0 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(741): ReflectionClass->__construct('path.database')
+#1 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(631): Illuminate\Container\Container->build('path.database', Array)
+#2 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(447): Illuminate\Container\Container->make('path.database', Array)
+#3 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(1167): Laravel\Lumen\Application->make('path.database')
+#4 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(55): Illuminate\Container\Container->offsetGet('path.database')
+#5 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(42): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->registerAssets()
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(277): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->register()
+#7 /home/vagrant/lumenapi/bootstrap/app.php(87): Laravel\Lumen\Application->register(Object(LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider))
+#8 /home/vagrant/lumenapi/artisan(18): require('/home/vagrant/l...')
+#9 {main}  
+[2016-10-25 02:27:18] lumen.ERROR: ReflectionException: Class path.database does not exist in /home/vagrant/lumenapi/vendor/illuminate/container/Container.php:741
+Stack trace:
+#0 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(741): ReflectionClass->__construct('path.database')
+#1 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(631): Illuminate\Container\Container->build('path.database', Array)
+#2 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(447): Illuminate\Container\Container->make('path.database', Array)
+#3 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(1167): Laravel\Lumen\Application->make('path.database')
+#4 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(55): Illuminate\Container\Container->offsetGet('path.database')
+#5 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(42): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->registerAssets()
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(277): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->register()
+#7 /home/vagrant/lumenapi/bootstrap/app.php(86): Laravel\Lumen\Application->register(Object(LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider))
+#8 /home/vagrant/lumenapi/artisan(18): require('/home/vagrant/l...')
+#9 {main}  
+[2016-10-25 02:30:39] lumen.ERROR: ReflectionException: Class path.database does not exist in /home/vagrant/lumenapi/vendor/illuminate/container/Container.php:741
+Stack trace:
+#0 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(741): ReflectionClass->__construct('path.database')
+#1 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(631): Illuminate\Container\Container->build('path.database', Array)
+#2 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(447): Illuminate\Container\Container->make('path.database', Array)
+#3 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(1167): Laravel\Lumen\Application->make('path.database')
+#4 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(55): Illuminate\Container\Container->offsetGet('path.database')
+#5 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(42): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->registerAssets()
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(277): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->register()
+#7 /home/vagrant/lumenapi/bootstrap/app.php(86): Laravel\Lumen\Application->register(Object(LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider))
+#8 /home/vagrant/lumenapi/artisan(18): require('/home/vagrant/l...')
+#9 {main}  
+[2016-10-25 02:34:01] lumen.ERROR: ReflectionException: Class path.database does not exist in /home/vagrant/lumenapi/vendor/illuminate/container/Container.php:741
+Stack trace:
+#0 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(741): ReflectionClass->__construct('path.database')
+#1 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(631): Illuminate\Container\Container->build('path.database', Array)
+#2 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(447): Illuminate\Container\Container->make('path.database', Array)
+#3 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(1167): Laravel\Lumen\Application->make('path.database')
+#4 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(55): Illuminate\Container\Container->offsetGet('path.database')
+#5 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(42): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->registerAssets()
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(277): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->register()
+#7 /home/vagrant/lumenapi/bootstrap/app.php(86): Laravel\Lumen\Application->register(Object(LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider))
+#8 /home/vagrant/lumenapi/artisan(18): require('/home/vagrant/l...')
+#9 {main}  
+[2016-10-25 02:36:07] lumen.ERROR: ReflectionException: Class path.database does not exist in /home/vagrant/lumenapi/vendor/illuminate/container/Container.php:741
+Stack trace:
+#0 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(741): ReflectionClass->__construct('path.database')
+#1 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(631): Illuminate\Container\Container->build('path.database', Array)
+#2 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(447): Illuminate\Container\Container->make('path.database', Array)
+#3 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(1167): Laravel\Lumen\Application->make('path.database')
+#4 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(55): Illuminate\Container\Container->offsetGet('path.database')
+#5 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(42): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->registerAssets()
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(277): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->register()
+#7 /home/vagrant/lumenapi/bootstrap/app.php(86): Laravel\Lumen\Application->register(Object(LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider))
+#8 /home/vagrant/lumenapi/artisan(18): require('/home/vagrant/l...')
+#9 {main}  
+[2016-10-25 02:36:50] lumen.ERROR: ReflectionException: Class path.database does not exist in /home/vagrant/lumenapi/vendor/illuminate/container/Container.php:741
+Stack trace:
+#0 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(741): ReflectionClass->__construct('path.database')
+#1 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(631): Illuminate\Container\Container->build('path.database', Array)
+#2 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(447): Illuminate\Container\Container->make('path.database', Array)
+#3 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(1167): Laravel\Lumen\Application->make('path.database')
+#4 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(55): Illuminate\Container\Container->offsetGet('path.database')
+#5 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(42): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->registerAssets()
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(277): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->register()
+#7 /home/vagrant/lumenapi/bootstrap/app.php(86): Laravel\Lumen\Application->register(Object(LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider))
+#8 /home/vagrant/lumenapi/artisan(18): require('/home/vagrant/l...')
+#9 {main}  
+[2016-10-25 02:37:13] lumen.ERROR: ReflectionException: Class path.database does not exist in /home/vagrant/lumenapi/vendor/illuminate/container/Container.php:741
+Stack trace:
+#0 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(741): ReflectionClass->__construct('path.database')
+#1 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(631): Illuminate\Container\Container->build('path.database', Array)
+#2 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(447): Illuminate\Container\Container->make('path.database', Array)
+#3 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(1167): Laravel\Lumen\Application->make('path.database')
+#4 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(55): Illuminate\Container\Container->offsetGet('path.database')
+#5 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(42): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->registerAssets()
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(277): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->register()
+#7 /home/vagrant/lumenapi/bootstrap/app.php(86): Laravel\Lumen\Application->register(Object(LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider))
+#8 /home/vagrant/lumenapi/artisan(18): require('/home/vagrant/l...')
+#9 {main}  
+[2016-10-25 02:38:11] lumen.ERROR: ReflectionException: Class path.database does not exist in /home/vagrant/lumenapi/vendor/illuminate/container/Container.php:741
+Stack trace:
+#0 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(741): ReflectionClass->__construct('path.database')
+#1 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(631): Illuminate\Container\Container->build('path.database', Array)
+#2 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(447): Illuminate\Container\Container->make('path.database', Array)
+#3 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(1167): Laravel\Lumen\Application->make('path.database')
+#4 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(55): Illuminate\Container\Container->offsetGet('path.database')
+#5 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(42): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->registerAssets()
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(277): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->register()
+#7 /home/vagrant/lumenapi/bootstrap/app.php(86): Laravel\Lumen\Application->register(Object(LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider))
+#8 /home/vagrant/lumenapi/artisan(18): require('/home/vagrant/l...')
+#9 {main}  
+[2016-10-25 02:39:32] lumen.ERROR: ReflectionException: Class path.database does not exist in /home/vagrant/lumenapi/vendor/illuminate/container/Container.php:741
+Stack trace:
+#0 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(741): ReflectionClass->__construct('path.database')
+#1 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(631): Illuminate\Container\Container->build('path.database', Array)
+#2 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(447): Illuminate\Container\Container->make('path.database', Array)
+#3 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(1167): Laravel\Lumen\Application->make('path.database')
+#4 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(55): Illuminate\Container\Container->offsetGet('path.database')
+#5 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(42): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->registerAssets()
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(277): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->register()
+#7 /home/vagrant/lumenapi/bootstrap/app.php(86): Laravel\Lumen\Application->register(Object(LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider))
+#8 /home/vagrant/lumenapi/artisan(18): require('/home/vagrant/l...')
+#9 {main}  
+[2016-10-25 02:40:08] lumen.ERROR: ReflectionException: Class path.database does not exist in /home/vagrant/lumenapi/vendor/illuminate/container/Container.php:741
+Stack trace:
+#0 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(741): ReflectionClass->__construct('path.database')
+#1 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(631): Illuminate\Container\Container->build('path.database', Array)
+#2 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(447): Illuminate\Container\Container->make('path.database', Array)
+#3 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(1167): Laravel\Lumen\Application->make('path.database')
+#4 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(55): Illuminate\Container\Container->offsetGet('path.database')
+#5 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(42): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->registerAssets()
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(277): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->register()
+#7 /home/vagrant/lumenapi/bootstrap/app.php(86): Laravel\Lumen\Application->register(Object(LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider))
+#8 /home/vagrant/lumenapi/artisan(18): require('/home/vagrant/l...')
+#9 {main}  
+[2016-10-25 02:43:40] lumen.ERROR: ReflectionException: Class path.database does not exist in /home/vagrant/lumenapi/vendor/illuminate/container/Container.php:741
+Stack trace:
+#0 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(741): ReflectionClass->__construct('path.database')
+#1 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(631): Illuminate\Container\Container->build('path.database', Array)
+#2 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(447): Illuminate\Container\Container->make('path.database', Array)
+#3 /home/vagrant/lumenapi/vendor/illuminate/container/Container.php(1167): Laravel\Lumen\Application->make('path.database')
+#4 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(55): Illuminate\Container\Container->offsetGet('path.database')
+#5 /home/vagrant/lumenapi/vendor/lucadegasperi/oauth2-server-laravel/src/OAuth2ServerServiceProvider.php(42): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->registerAssets()
+#6 /home/vagrant/lumenapi/vendor/laravel/lumen-framework/src/Application.php(277): LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider->register()
+#7 /home/vagrant/lumenapi/bootstrap/app.php(86): Laravel\Lumen\Application->register(Object(LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider))
+#8 /home/vagrant/lumenapi/artisan(18): require('/home/vagrant/l...')
+#9 {main}  
