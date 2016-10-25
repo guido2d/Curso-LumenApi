@@ -15,7 +15,7 @@ $factory->define(App\Profesor::class, function ($faker) {
     return [
         'nombre' => $faker->name,
         'direccion' => $faker->address,
-        'telefono' => $faker->phoneNumber;
+        'telefono' => $faker->phoneNumber,
         'profesion' => $faker->randomElement($array = array ('ingeniería', 'matemática', 'fisica'))
     ];
 });
@@ -24,7 +24,7 @@ $factory->define(App\Estudiante::class, function ($faker) {
     return [
         'nombre' => $faker->name,
         'direccion' => $faker->address,
-        'telefono' => $faker->phoneNumber;
+        'telefono' => $faker->phoneNumber,
         'carrera' => $faker->randomElement($array = array ('ingeniería', 'matemática', 'fisica'))
     ];
 });
